@@ -1,0 +1,7 @@
+body {
+background-color: rgb(244, 250, 255);
+}
+
+.drop-shadow {
+    text-shadow: rgba(0, 0, 0, 0.425);
+}
