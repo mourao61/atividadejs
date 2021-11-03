@@ -12,8 +12,8 @@ btnSimular.addEventListener('click', function(){
     
 
 divMostrar.innerHTML = `
-<div>Modelo do veiculo :  <strong>${frmmodelo}</strong></div>
-<div>Valor do veiculo :  R$ <strong>${frmvalor}</strong></div>
+<div>Modelo do veículo :  <strong>${frmmodelo}</strong></div>
+<div>Valor do veículo :  R$ <strong>${frmvalor}</strong></div>
 <div>Valor da entrada :  R$ <strong>${frmentrada}</strong></div>
 <div>60x no valor de :  R$ <strong>${frmfinal.toFixed(2)}</strong></div>
 `
