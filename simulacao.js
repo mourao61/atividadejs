@@ -18,6 +18,6 @@ divMostrar.innerHTML = `
 <div>Modelo do veiculo :  <strong>${frmmodelo}</strong></div>
 <div>Valor do veiculo :  <strong>${frmvalor}</strong></div>
 <div>Valor da entrada :  <strong>${frmentrada}</strong></div>
-<div>60x de R$ :  <strong>${frmfinal}.toFixed(2)</strong></div>
+<div>60x de R$ :  <strong>${frmfinal.toFixed(2)}</strong></div>
 `
 } ) 
