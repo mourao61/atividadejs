@@ -10,11 +10,12 @@ btnSimular.addEventListener('click', function(){
     var frmentrada = frmvalor / 2
     var frmfinal = frmvalor / 2 / 60 * 0.70 + frmvalor / 2 / 60
     
+// .toFixed(2)
 
 divMostrar.innerHTML = `
 <div>Modelo do veículo :  <strong>${frmmodelo}</strong></div>
-<div>Valor do veículo :  R$ <strong>${frmvalor}</strong></div>
-<div>Valor da entrada :  R$ <strong>${frmentrada}</strong></div>
-<div>60x no valor de :  R$ <strong>${frmfinal.toFixed(2)}</strong></div>
+<div>Valor do veículo :  <strong>R$</strong> <strong>${frmvalor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong></div>
+<div>Valor da entrada :  <strong>${frmentrada.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong></div>
+<div>60x no valor de :  <strong>${frmfinal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong></div>
 `
 } ) 
