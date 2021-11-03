@@ -2,9 +2,6 @@ var frmmodelo;
 var frmvalor = parseInt();
 var divMostrar;
 
-
-// Botao cadastrar add evento
-
 btnSimular.addEventListener('click', function(){
    frmmodelo = modelo.value
    frmvalor = valor.value
