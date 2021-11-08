@@ -1,11 +1,9 @@
-const inputNumero = document.getElementById('inputNumero');
-const btnNumero = document.getElementById('btnNumero');
-const outNumero = document.getElementById('outNumero');
 
-// Verifica se o número escolhido é par ou ímpar
+btnNumero.addEventListener('click', verificarNumero);
+
 function verificarNumero() {
     
-    let numero = inputNumero.value;
+    var numero = inputNumero.value;
 
     if ((numero < 0 || numero == '') || isNaN(numero)) {
         alert('Digite um número positivo válido !');
@@ -21,4 +19,3 @@ function verificarNumero() {
 
 }
 
-btnNumero.addEventListener('click', verificarNumero);
