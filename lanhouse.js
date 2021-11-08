@@ -1,17 +1,13 @@
-const inputPrecoPorMin = document.getElementById('inputPrecoPorMin');
-const inputTempoDeUso = document.getElementById('inputTempoDeUso');
-const btnCalcular = document.getElementById('btnCalcular');
-const outResultado = document.getElementById('outResultado');
+btnCalcular.addEventListener('click', calcularPreco);
 
 function calcularPreco() {
     
-    let precoPorMinuto = Number(inputPrecoPorMin.value);
-    let tempoDeUso = Number(inputTempoDeUso.value);
-    let tempoTotalDeUso = Math.ceil(tempoDeUso / 15);
+    var precoPorMinuto = Number(inputPrecoPorMin.value);
+    var tempoDeUso = Number(inputTempoDeUso.value);
+    var tempoTotalDeUso = Math.ceil(tempoDeUso / 15);
 
-    let precoTotal = (precoPorMinuto * tempoTotalDeUso).toFixed(2);
+    var precoTotal = (precoPorMinuto * tempoTotalDeUso).toFixed(2);
 
     outResultado.textContent = `Total a Pagar: R$ ${precoTotal}`;
 }
 
-btnCalcular.addEventListener('click', calcularPreco);
