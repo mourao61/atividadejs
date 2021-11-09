@@ -16,16 +16,28 @@ function verificarVelocidade() {
     }
     
     if (velocidadeDoVeiculo <= velocidadePermitida) { 
-        outSituacao.textContent = `Velocidade dentro do permitido. Sem multa !`;
+        outSituacao.innerHTML = `
+        <div class="alert alert-success" role="alert">
+        Velocidade dentro do permitido. Sem multa!
+        </div>
+        `
+    
     } else if (velocidadeAcimaDoPermitido >= vintePorCentoDoPermitido) { 
-
-      
-        outSituacao.textContent = `Você estava com a velocidade 20% acima do permitido. Multa Grave !`;
+          
+        outSituacao.innerHTML = `
+        <div class="alert alert-danger" role="alert">
+           Você estava com a velocidade 20% acima do permitido. Multa Grave!
+        </div>
+        `
     } else {
 
+        outSituacao.innerHTML = `
+        <div class="alert alert-info" role="alert">
+         Você estava com menos de 20% de velocidade acima do permitido. Multa Leve!
+        </div>
+        `
         
-        outSituacao.textContent = `Você estava com menos de 20% de velocidade acima do permitido. Multa Leve !`
+        
     }
 
 }
-
