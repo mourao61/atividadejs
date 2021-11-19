@@ -27,7 +27,7 @@ function adicionarLista(urgencia) {
 
     //ocorre a montagem dos itens da lista de nomes (lista de espera)
     listaDeEspera.forEach(function(item, indice){
-        listaTela += `<li class="list-group-item">${indice+1} - ${item}</li>`
+        listaTela += `<li class="list-group-item text-center">${indice+1} - ${item}</li>`
     })
 
     //adiciono a ulLista todo o conteudo da variavel listaTela
