@@ -59,7 +59,7 @@ var ckTodos = document.getElementById("ckTodos");
 
 ckTodos.addEventListener("change", function () { 
   var tbLista = document.getElementById("tbLista");
-  var ckExcluir = tbFilmes.getElementsByTagName("input");
+  var ckExcluir = tbLista.getElementsByTagName("input");
   var status = ckTodos.checked; 
 
   for (var i = 1; i < ckExcluir.length; i++) {
@@ -76,7 +76,7 @@ function removerLista() {
       if (!ckExcluir[i].checked) {        
         produto = tbLista.rows[i].cells[0].textContent;
         quantidade = tbLista.rows[i].cells[1].textContent;
-        gravarFilme(produtos, quantidade);
+        gravarLista(produtos, quantidade);
       }
     }    
     for (i = ckExcluir.length - 1; i > 0; i--) {
@@ -88,4 +88,4 @@ function removerLista() {
   }
 
 var btExcluir = document.getElementById("btExcluir");
-btExcluir.addEventListener("click", removerFilmes);
+btExcluir.addEventListener("click", removerLista);
